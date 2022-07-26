@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_green_dark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="예약을 원하시면 성함과 전화번호를 입력 후 예약버튼을 눌러주세요!"
+        android:textSize="27dp"
+        android:textAlignment="center"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="이름: "
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/etxt1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="이름 입력"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:text="연락처: "
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/etxt2"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint="연락처 입력"
+            android:textSize="25dp"
+
+           />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            android:text="날짜 선택"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:text="시간 선택"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="예약시간: "
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="미선택"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="예약요일: "
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="미선택"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="예약하기"
+        android:textSize="25dp"
+        android:layout_marginLeft="100dp"/>
+
+</LinearLayout>
