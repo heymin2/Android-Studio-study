@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <DatePicker
+        android:id="@+id/dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/dpbtn"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="날짜 선택 완료"
+        android:textSize="25dp"
+        android:layout_marginLeft="80dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="예약날짜>"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/dptv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="0 월 0 일 예약"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+</LinearLayout>
